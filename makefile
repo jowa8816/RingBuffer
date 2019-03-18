@@ -30,3 +30,7 @@ ring.o : ring.c ring.h
 
 clean :
 	rm ringtest ring_test.o ring.o
+
+test : ringtest
+	./ringtest
+
