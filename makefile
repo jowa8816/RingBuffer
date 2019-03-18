@@ -20,7 +20,7 @@
 # @version 1.0
 #
 ringtest : ring_test.o ring.o
-	cc -o ringtest ring_test.o ring.o
+	cc -o ringtest ring_test.o ring.o -lcunit
 
 ring_test.o : ring_test.c ring.h
 	cc -Wall -Werror -c ring_test.c
